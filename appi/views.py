@@ -15,6 +15,7 @@ def index(request):
         context={"hostname":hostname,"ip_address":ip_address,"date_time":date_time,"n":n}
     else:
         deta=data()
+        contex={"deta":deta}
     return render(request, 'index.html',context)
 
 def show(request):
