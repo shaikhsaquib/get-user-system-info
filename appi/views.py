@@ -5,7 +5,7 @@ import random
 from .models import data
 # Create your views here.
 def index(request):
-    if request.method=="GET":
+    if request.method=="POST":
         hostname = socket.gethostname()
         ip_address = socket.gethostbyname(hostname)
         date_time=datetime.datetime.now()
