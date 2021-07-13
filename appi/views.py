@@ -12,7 +12,7 @@ def index(request):
         n = random.randint(20,50)
         deta=data(hostname=hostname, ip_address= ip_address,date_time=date_time,n=n)
         deta.save()
-    context={"hostname":hostname,"ip_address":ip_address,"date_time":date_time,"n":n}
+        context={"hostname":hostname,"ip_address":ip_address,"date_time":date_time,"n":n}
     return render(request, 'index.html',context)
 
 def show(request):
