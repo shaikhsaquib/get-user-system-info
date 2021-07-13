@@ -16,7 +16,7 @@ def index(request):
     return render(request, 'index.html',context)
 
 def show(request):
-    if request.method=="GET":
+    # if request.method=="GET":
         # de=data.objects.all()
-        context={"deta":de}
+        # context={"deta":de}
     return render(request,'show.html',context)
