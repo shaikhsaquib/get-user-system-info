@@ -19,4 +19,5 @@ def show(request):
     # if request.method=="GET":
         # de=data.objects.all()
         # context={"deta":de}
-    return render(request,'show.html',context)
+    return render(request,'show.html')
+    # ,context)
