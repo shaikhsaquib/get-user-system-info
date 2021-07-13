@@ -13,10 +13,10 @@ def index(request):
         deta=data(hostname=hostname, ip_address= ip_address,date_time=date_time,n=n)
         deta.save()
         context={"hostname":hostname,"ip_address":ip_address,"date_time":date_time,"n":n}
+        return render(request, 'index.html',context)
     else:
         deta=data()
-        contex={"deta":deta}
-    return render(request, 'index.html',context)
+    return render(request, 'index.html')
 
 def show(request):
     if request.method=="GET":

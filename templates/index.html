@@ -11,6 +11,8 @@
 </head>
 <body>
     <form action='' method="POST">  
+        {% csrf_token %}
+      <h1>Click get to fetch the ip_address and hostname of user computer</h1>  
     <button class="btn btn-success">GET</button>
     
 </form>
