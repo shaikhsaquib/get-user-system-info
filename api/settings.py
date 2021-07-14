@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g*xuzj68kteto1qio9s!q2ct2_v&a12gog(^cu8vu#8-s756bl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS =["clientsysteminfo.herokuapp.com","*"]
 
@@ -128,7 +128,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT=BASE_DIR/'static'
+
+# STATICFILES_DIRS=[
+#     os.path.join(BASE_DIR,'static')
+# ]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -10,15 +10,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form action='' method="POST">  
+    <div class="" > 
+        <form action='' method="POST">  
         {% csrf_token %}
-      <h1>Click get to fetch the ip_address and hostname of user computer</h1>  
-    <button class="btn btn-success">GET</button>
-    
-</form>
-<form action="/show" method="GET">
+        <h1 style="font-size: 1.3rem; font-family: 'STIX Two Math', serif;">Click get to fetch the ip_address and hostname of user computer</h1>  
+        <button class="btn btn-success">GET</button>
+    </form>
+</div>
+<div class="class-border">
+<div class="col-log-4">
+    <form action="/show" method="GET">
     <button class="btn btn-primary" href="{% url 'show' %}">PUT</button>
 </form>
+</div>
+</div>
 </body>
 </html>
 {% endblock %}
